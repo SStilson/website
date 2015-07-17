@@ -11,7 +11,7 @@ body {
 }
 
 body {
-    font-family: Merriweather,'Helvetica Neue',Arial,sans-serif;
+    font-family: 'Helvetica Neue', sans-serif;
 }
 
 hr {
@@ -34,6 +34,7 @@ a {
 a:hover,
 a:focus {
     color: #f05f40;
+    font-family: 'Helvetica Neue', sans-serif;
 }
 
 .social-media a:hover, a:focus {
@@ -42,6 +43,7 @@ a:focus {
 
 #footer {
     background-color: #f05f40;
+    opacity: 0.8;
 }
 
 ul {
@@ -51,6 +53,7 @@ ul {
 
 .inline .inline-item, .inline li {
     display: inline-block;
+    padding: 70px 10px;
 }
 
 h1,
@@ -59,7 +62,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
+    font-family: 'Playfair Display', serif;
 }
 
 p {
@@ -77,6 +80,7 @@ img {
 
 .bg-primary {
     background-color: #f05f40;
+    opacity: 0.8;
 }
 
 .bg-dark {
@@ -233,11 +237,13 @@ header .header-content {
     color: #f05f40;
 }
 
-header .header-content .header-content-inner h1 {
+header .header-content .header-content-inner h2 {
     margin-top: 0;
     margin-bottom: 0;
     font-weight: 400;
+    font-size: 350%;
     color: #000;
+    font-family: 'Playfair Display', serif;
 }
 
 header .header-content .header-content-inner hr {
@@ -245,6 +251,7 @@ header .header-content .header-content-inner hr {
 }
 
 header .header-content .header-content-inner p {
+    margin-top: 210px;
     margin-bottom: 50px;
     font-size: 16px;
     font-weight: 300;
@@ -331,7 +338,7 @@ header .header-content .header-content-inner p {
 .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category,
 .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
     padding: 0 15px;
-    font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
+    font-family: 'Helvetica Neue', sans-serif;
 }
 
 .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category {
@@ -481,8 +488,8 @@ fieldset[disabled] .btn-primary.active {
     border: 0;
     border-radius: 300px;
     text-transform: uppercase;
-    font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
-    font-weight: 700;
+    font-family: 'Helvetica Neue', sans-serif;
+    font-weight: 400;
 }
 
 .btn-xl {
