@@ -11,7 +11,7 @@ body {
 }
 
 body {
-    font-family: 'Helvetica Neue', sans-serif;
+    font-family: 'Raleway', sans-serif;
 }
 
 hr {
@@ -34,7 +34,15 @@ a {
 a:hover,
 a:focus {
     color: #f05f40;
-    font-family: 'Helvetica Neue', sans-serif;
+    font-family: 'Raleway', sans-serif;
+}
+
+.copyright a, .copyright p {
+    color: #fff;
+}
+
+.copyright a:hover, a:focus {
+    color: #f05f40;
 }
 
 .social-media a:hover, a:focus {
@@ -61,7 +69,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Raleway', sans-serif;
 }
 
 p {
@@ -75,6 +83,7 @@ p {
 img {
     max-height: 360px;
     max-width: 360px;
+    
 }
 
 .bg-primary {
@@ -87,7 +96,7 @@ img {
 }
 
 .text-faded {
-    color: rgba(255,255,255,.7);
+    color: #000000;
 }
 
 section {
@@ -102,9 +111,13 @@ aside {
     padding: 0;
 }
 
+#script-text-id {
+    font-family: 'Dancing Script', cursive;
+}
+
 .navbar-default {
     border-color: rgba(34,34,34,.05);
-    font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
+    font-family: 'Raleway', sans-serif;
     background-color: #fff;
     -webkit-transition: all .35s;
     -moz-transition: all .35s;
@@ -113,7 +126,7 @@ aside {
 
 .navbar-default .navbar-header .navbar-brand {
     text-transform: uppercase;
-    font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-weight: 700;
     color: #f05f40;
 }
@@ -147,6 +160,12 @@ aside {
     background-color: transparent;
 }
 
+.navbar-brand {
+    font-size: 24px;
+}
+
+
+
 @media(max-width: 768px) {
     #about {
         text-align: center;
@@ -157,9 +176,18 @@ aside {
     }
 
     img {
-    max-height: 70%;
-    max-width: 70%;
-}
+        max-height: 70%;
+        max-width: 70%;
+    }
+
+    header .header-content .header-content-inner p {
+        margin-top: 100px;
+    }
+
+    .copyright {
+        text-align: center;
+        margin-top: 20px;
+    }
 }
 
 @media(min-width:768px) {
@@ -193,7 +221,7 @@ aside {
     }
 
     .navbar-default.affix .navbar-header .navbar-brand {
-        font-size: 14px;
+        font-size: 24px;
         color: #f05f40;
     }
 
@@ -211,6 +239,14 @@ aside {
     .navbar-default.affix .nav>li>a:focus:hover {
         color: #f05f40;
     }
+
+    header .header-content .header-content-inner p {
+        margin-top: 250px;
+    }
+
+    .copyright {
+        text-align: right;
+    }
 }
 
 header {
@@ -219,7 +255,7 @@ header {
     min-height: auto;
     text-align: center;
     color: #000;
-    background-image: url(../img/header.jpg);
+    background-image: url(../img/header_text.png);
     background-position: center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -241,7 +277,16 @@ header .header-content .header-content-inner h2 {
     font-weight: 400;
     font-size: 350%;
     color: #000;
-    font-family: 'Playfair Display', serif;
+    font-family: 'Raleway', sans-serif;
+}
+
+header .header-content .header-content-inner h2 span {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-weight: 300;
+    font-size: 200%;
+    color: #000;
+    font-family: 'Dancing Script', cursive;
 }
 
 header .header-content .header-content-inner hr {
@@ -249,7 +294,6 @@ header .header-content .header-content-inner hr {
 }
 
 header .header-content .header-content-inner p {
-    margin-top: 210px;
     margin-bottom: 50px;
     font-size: 16px;
     font-weight: 300;
@@ -307,7 +351,7 @@ header .header-content .header-content-inner p {
     display: block;
     position: relative;
     margin: 0 auto;
-    max-width: 650px;
+
 }
 
 .portfolio-box .portfolio-box-caption {
@@ -336,7 +380,7 @@ header .header-content .header-content-inner p {
 .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category,
 .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
     padding: 0 15px;
-    font-family: 'Helvetica Neue', sans-serif;
+    font-family: 'Raleway', sans-serif;
 }
 
 .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category {
@@ -486,12 +530,95 @@ fieldset[disabled] .btn-primary.active {
     border: 0;
     border-radius: 300px;
     text-transform: uppercase;
-    font-family: 'Helvetica Neue', sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-weight: 400;
 }
 
 .btn-xl {
     padding: 15px 30px;
+    -webkit-transition: all .35s;
+    -moz-transition: all .35s;
+    transition: all .35s;
+}
+
+.btn-xl:hover {
+    border-color: #f05f40;
+    color: #fff;
+    background-color: #f05f40;
+}
+
+.btn-circle {
+    width: 70px;
+    height: 70px;
+    margin-top: 15px;
+    padding: 7px 16px;
+    border: 2px solid #fff;
+    border-radius: 100%!important;
+    font-size: 40px;
+    color: #fff;
+    background: 0 0;
+    -webkit-transition: background .3s ease-in-out;
+    -moz-transition: background .3s ease-in-out;
+    transition: background .3s ease-in-out;
+}
+
+.btn-circle:hover,
+.btn-circle:focus {
+    outline: 0;
+    color: #fff;
+    background: rgba(255,255,255,.1);
+}
+
+.btn-circle i.animated {
+    -webkit-transition-property: -webkit-transform;
+    -webkit-transition-duration: 1s;
+    -moz-transition-property: -moz-transform;
+    -moz-transition-duration: 1s;
+}
+
+.btn-circle:hover i.animated {
+    -webkit-animation-name: pulse;
+    -moz-animation-name: pulse;
+    -webkit-animation-duration: 1.5s;
+    -moz-animation-duration: 1.5s;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-timing-function: linear;
+}
+
+@-webkit-keyframes pulse {    
+    0% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+
+    50% {
+        -webkit-transform: scale(1.2);
+        transform: scale(1.2);
+    }
+
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+@-moz-keyframes pulse {    
+    0% {
+        -moz-transform: scale(1);
+        transform: scale(1);
+    }
+
+    50% {
+        -moz-transform: scale(1.2);
+        transform: scale(1.2);
+    }
+
+    100% {
+        -moz-transform: scale(1);
+        transform: scale(1);
+    }
 }
 
 ::-moz-selection {
