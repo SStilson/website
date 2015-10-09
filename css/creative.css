@@ -86,6 +86,14 @@ img {
     
 }
 
+#about-me img {
+    border-radius: 50%;
+}
+
+.social-media li a i:hover {
+    color: #f05f40;
+}
+
 .bg-primary {
     background-color: #F37F66;
 }
@@ -111,8 +119,17 @@ aside {
     padding: 0;
 }
 
+.no-padding-top {
+    padding-top: 0px;
+}
+
 #script-text-id {
     font-family: 'Dancing Script', cursive;
+}
+
+#script-title-id {
+    font-family: 'Dancing Script', cursive;
+    color: #f05f40;
 }
 
 .navbar-default {
