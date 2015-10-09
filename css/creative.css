@@ -646,3 +646,9 @@ img::-moz-selection {
 body {
     webkit-tap-highlight-color: #222;
 }
+
+@media(max-width: 1200px) {
+    #about-me {
+        text-align: center;
+    }
+}
